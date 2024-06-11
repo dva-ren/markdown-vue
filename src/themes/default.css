@@ -266,17 +266,7 @@
   scroll-behavior: smooth;
   /* box-shadow: 0 0 8px #f7f2f4; */
   transition: box-shadow .3s;
-  background-color: white;
-}
-
-.markdown-body pre::before,
-.markdown-body pre::after{
-  content: '';
-  display: block;
-  margin: 5px 0;
-  height: 1px;
-  width: 30px;
-  background-color: var(--color-4);
+  background-color: #fafafa;
 }
 
 .dark .markdown-body pre > code{
@@ -365,4 +355,32 @@
 .gallery p{
   display: flex;
   gap: 2rem;
+}
+
+/* hint style */
+.markdown-body hint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(31 41 55);
+  min-height: 5rem;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+  gap: 1rem;
+  border-radius: 0.25rem;
+}
+
+.markdown-body hint.info {
+  border: 1px solid rgb(168, 168, 168);
+  background-color: rgb(231, 231, 231);
+}
+
+.markdown-body hint.warning {
+  border: 1px solid rgb(254, 215, 170);
+  background-color: rgb(255 247 237);
+}
+
+.markdown-body hint.error {
+  border: 1px solid rgba(236, 109, 109, 0.6);
+  background-color: rgba(236, 109, 109, 0.2);
 }

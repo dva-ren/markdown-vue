@@ -1,7 +1,7 @@
 import { defineComponent, h } from 'vue'
 import { md } from './core'
 
-export const Component = defineComponent({
+export const VMarkdown = defineComponent({
   name: 'v-markdown',
   props: {
     text: {

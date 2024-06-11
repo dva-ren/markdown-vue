@@ -10,6 +10,7 @@ md.use(await Shiki({
     dark: 'vitesse-dark',
   },
 }))
+
 md.use(mdContainer, 'hint', {
   validate(params) {
     return ['warning', 'info', 'error'].includes(params.trim())
@@ -47,6 +48,7 @@ md.use(mdContainer, 'gallery', {
     }
   },
 } as ContainerOpts)
+
 export {
   md as markdown,
   md,
